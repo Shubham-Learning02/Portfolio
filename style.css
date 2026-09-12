@@ -1,0 +1,146 @@
+html {
+    scroll-behavior: smooth;
+}
+
+h1
+{
+    color:#3D3430;
+    font-size:50px;
+    font-weight:700;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+body
+{
+     font-family:"Comic Sans MS", cursive, sans-serif;
+    background-color:#ffe9dc;
+    
+}
+
+section 
+{
+    font-size:18px;
+    color:#5F5550;
+    width:80%;max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #F1DDD6;
+    border-radius: 16px
+    
+}
+h2  
+{
+    font-size:30px;
+    color:#C97963;
+}
+.head
+{
+    color:#E9A38F;
+}
+.navbar
+{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background-color:#FFFFFF;
+    border-bottom:1px solid #F1DDD6; 
+}
+.logo
+{
+    font-size:24px;
+    font-weight:700;
+    color:#3D3430;
+}
+.navlink
+{
+    display:flex;
+    gap:25px;
+}
+.navlink a
+{
+    color:#5F5550;
+    text-decoration:none;
+    font-size:16px;
+}
+.navlink a:hover {
+    color: #C97963;
+}
+.tags span {
+    padding: 8px 16px;
+    background-color: #FFF8F4;
+    border: 1px solid #F1DDD6;
+    border-radius: 20px;
+
+    color: #5F5550;
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+.tags span:hover {
+    border-color: #C97963;
+    color: #C97963;
+}
+
+
+
+.emoji-scroll {
+    position: fixed;
+
+    right: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+
+    z-index: 1000;
+}
+.emoji-scroll span {
+    font-size: 18px;
+
+    opacity: 0.45;
+
+    transition: 0.3s;
+
+    cursor: pointer;
+}
+.emoji-scroll span.active {
+    font-size: 26px;
+    opacity: 1;
+
+    transform: scale(1.15);
+}
+.emoji-scroll::before {
+    content: "";
+
+    position: absolute;
+
+    width: 2px;
+
+    background-color: #E9A38F;
+
+    top: 15px;
+    bottom: 15px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: -1;
+}
+a {
+    text-decoration: none;
+    color: #2c00bc;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #C97963;
+}
