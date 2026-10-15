@@ -29,44 +29,6 @@ const sections = document.querySelectorAll(
 );
 
 
-function updateActiveEmoji() {
-
-    let currentSection = "";
-
-    // Check if we are at the bottom of the page
-
-    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 10) {
-
-        currentSection = "contact";
-
-    } 
-    
-    else {
-
-        sections.forEach(function(section) {
-
-            const sectionTop = section.getBoundingClientRect().top;
-
-            if (sectionTop <= window.innerHeight / 2) {
-
-                currentSection = section.id;
-
-            }
-
-        });
-
-    }
-
-
-    emojis.forEach(function(emoji) {
-
-        emoji.classList.remove("active");
-
-        if (emoji.dataset.section === currentSection) {
-
-            emoji.classList.add("active");
-
-        }
 
     });
 
