@@ -24,15 +24,7 @@ emojis.forEach(function(emoji) {
 
 // Detect current section
 
-const sections = document.querySelectorAll(
-    "#about, #education, #skills, #projects, #hobbies, #contact"
-);
 
-
-
-    });
-
-}
 
 
 window.addEventListener("scroll", updateActiveEmoji);
